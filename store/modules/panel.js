@@ -18,6 +18,13 @@ const panelModule = {
     currentPanelId: null,
   },
 
+  /* similar computed in vue */
+  getters: {
+    panelListThatIsRed() {
+      return this.panelList.filter((p) => p.color === "red");
+    },
+  },
+
   actions: {
     /* pseduo code, real code uses commit() */
     setPanelType(type) {

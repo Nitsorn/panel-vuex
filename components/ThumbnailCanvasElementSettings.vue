@@ -12,6 +12,12 @@ export default {
   props: {
     element: Object,
   },
+  methods: {
+    ...mapActions("PanelCanvas", ["setElementData"]),
+    setElementSettings(key, value) {
+      // we can use setElementData here
+    },
+  },
 };
 </script>
 

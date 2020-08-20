@@ -20,6 +20,7 @@ const panelModule = {
   actions: {
     loadCanvasDefault(template) {
       const data = PanelHelper.createInitialThumbnailData(template);
+      /* we can also access data from other vuex modules (like panel) as well */
       /* pseudocode */
       this.mutateLoadCanvas(data);
     },
